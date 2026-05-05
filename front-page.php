@@ -39,6 +39,26 @@ $vs_right = CPV_Data::get_airline_by_slug( 'wizz-air' );
 <section class="section">
 	<div class="shell">
 		<div class="section__intro">
+			<p class="eyebrow">Offerte in evidenza</p>
+			<h2>Banner ispirazionali per scoprire rotte, city break e partenze strategiche dall'Italia.</h2>
+		</div>
+		<div class="banner-grid">
+			<a class="banner-card" href="<?php echo esc_url( home_url( '/voli/milano-malpensa-airport-a-parigi/' ) ); ?>">
+				<img src="<?php echo esc_url( CPV_THEME_URL . '/assets/images/banner-milano-parigi.svg' ); ?>" alt="Offerte voli da Milano a Parigi">
+			</a>
+			<a class="banner-card" href="<?php echo esc_url( home_url( '/voli/leonardo-da-vinci-fiumicino-airport-a-barcellona/' ) ); ?>">
+				<img src="<?php echo esc_url( CPV_THEME_URL . '/assets/images/banner-roma-barcellona.svg' ); ?>" alt="Offerte voli da Roma a Barcellona">
+			</a>
+			<a class="banner-card" href="<?php echo esc_url( home_url( '/voli/naples-international-airport-a-dubai/' ) ); ?>">
+				<img src="<?php echo esc_url( CPV_THEME_URL . '/assets/images/banner-napoli-dubai.svg' ); ?>" alt="Offerte voli da Napoli a Dubai">
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="shell">
+		<div class="section__intro">
 			<p class="eyebrow">Confronta Voli</p>
 			<h2>Esplora le principali offerte di biglietti aerei per trovare la soluzione piu conveniente per il tuo viaggio.</h2>
 			<p class="hero__lede">Siamo un motore di ricerca per voli che analizza le principali compagnie aeree e i piu importanti fornitori di viaggi online. Ti permettiamo di confrontare facilmente tariffe aeree e costi di viaggio in un'unica piattaforma, per poi prenotare direttamente con il fornitore scelto.</p>

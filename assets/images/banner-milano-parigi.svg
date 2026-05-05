@@ -1,0 +1,15 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#0B2447"/>
+  <path d="M0 492C151 430 300 412 453 438C618 466 731 558 890 568C1011 576 1117 546 1200 505V720H0V492Z" fill="#1271C2"/>
+  <path d="M0 542C136 500 253 496 371 534C506 578 629 653 783 663C917 672 1060 627 1200 572V720H0V542Z" fill="#CAEFFf" fill-opacity="0.34"/>
+  <circle cx="977" cy="144" r="90" fill="#FF7A45" fill-opacity="0.18"/>
+  <circle cx="1020" cy="171" r="44" fill="#FF7A45"/>
+  <path d="M820 362H905L875 228L820 362Z" fill="#F6F8FB"/>
+  <rect x="852" y="362" width="24" height="153" fill="#F6F8FB"/>
+  <rect x="791" y="515" width="149" height="18" rx="9" fill="#F6F8FB"/>
+  <path d="M175 468C220 420 267 370 314 318C361 366 408 416 455 468" stroke="#F6F8FB" stroke-width="20" stroke-linecap="round"/>
+  <path d="M221 469V342H267V469" stroke="#F6F8FB" stroke-width="20" stroke-linecap="round"/>
+  <path d="M361 469V342H407V469" stroke="#F6F8FB" stroke-width="20" stroke-linecap="round"/>
+  <text x="72" y="122" fill="#F6F8FB" font-family="Arial, sans-serif" font-size="62" font-weight="700">Milano verso Parigi</text>
+  <text x="72" y="186" fill="#CAEFFf" font-family="Arial, sans-serif" font-size="30">Weekend, city break e offerte dai principali aeroporti lombardi</text>
+</svg>

@@ -112,11 +112,12 @@ a {
 
 .travel-widget {
 	position: relative;
-	overflow: hidden;
+	overflow: visible;
+	z-index: 4;
 }
 
 .travel-widget--home {
-	padding: 56px 0 34px;
+	padding: 48px 0 68px;
 	background:
 		linear-gradient(180deg, rgba(11, 36, 71, 0.8), rgba(11, 36, 71, 0.68)),
 		linear-gradient(135deg, rgba(18, 113, 194, 0.22), rgba(255, 122, 69, 0.18)),
@@ -132,15 +133,15 @@ a {
 }
 
 .travel-widget__hero-copy {
-	max-width: 940px;
-	margin-bottom: 24px;
+	max-width: 860px;
+	margin-bottom: 20px;
 	color: #ffffff;
 }
 
 .travel-widget__hero-copy h1 {
 	margin: 0 0 16px;
-	font-size: clamp(2.5rem, 5vw, 5.25rem);
-	line-height: 0.95;
+	font-size: clamp(2.45rem, 5.5vw, 4.5rem);
+	line-height: 0.98;
 	letter-spacing: -0.05em;
 }
 
@@ -155,6 +156,9 @@ a {
 	background: rgba(11, 36, 71, 0.78);
 	backdrop-filter: blur(18px);
 	box-shadow: 0 24px 60px rgba(7, 21, 41, 0.28);
+	overflow: visible;
+	position: relative;
+	z-index: 5;
 }
 
 .travel-widget--inner .travel-widget__frame {
@@ -165,7 +169,7 @@ a {
 }
 
 .hero {
-	padding: 42px 0 32px;
+	padding: 30px 0 24px;
 }
 
 .hero--compact {
@@ -186,15 +190,15 @@ a {
 .hero h1,
 .section__intro h2,
 .prose h1 {
-	font-size: clamp(2.3rem, 4vw, 4.6rem);
-	line-height: 0.96;
+	font-size: clamp(1.95rem, 4vw, 3.35rem);
+	line-height: 1.02;
 	margin: 0 0 18px;
 	letter-spacing: -0.04em;
 }
 
 .hero__title {
-	font-size: clamp(2rem, 3.4vw, 3.6rem);
-	line-height: 1.02;
+	font-size: clamp(1.85rem, 3.3vw, 3rem);
+	line-height: 1.06;
 	margin: 0 0 18px;
 	letter-spacing: -0.04em;
 }
@@ -202,8 +206,8 @@ a {
 .hero__lede,
 .panel p,
 .prose p {
-	font-size: 1.02rem;
-	line-height: 1.7;
+	font-size: 0.98rem;
+	line-height: 1.72;
 }
 
 .eyebrow {
@@ -345,9 +349,36 @@ a {
 .card-grid,
 .triple-grid,
 .metric-grid,
-.post-list {
+.post-list,
+.banner-grid {
 	display: grid;
 	gap: 18px;
+}
+
+.banner-grid {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	margin-bottom: 8px;
+}
+
+.banner-card {
+	display: block;
+	border-radius: 28px;
+	overflow: hidden;
+	box-shadow: var(--cpv-shadow);
+	background: var(--cpv-surface-solid);
+	transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.banner-card:hover {
+	transform: translateY(-4px);
+}
+
+.banner-card img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1.2 / 1;
+	object-fit: cover;
 }
 
 .card-grid {
@@ -497,6 +528,7 @@ a {
 	background: rgba(255, 255, 255, 0.78);
 	border: 1px solid rgba(16, 35, 61, 0.08);
 	box-shadow: var(--cpv-shadow);
+	overflow: visible;
 }
 
 .prose {
@@ -533,7 +565,8 @@ a {
 @media (max-width: 880px) {
 	.hero__grid,
 	.site-footer__grid,
-	.story-grid {
+	.story-grid,
+	.banner-grid {
 		grid-template-columns: 1fr;
 	}
 
@@ -547,5 +580,49 @@ a {
 
 	.site-nav {
 		gap: 12px;
+	}
+
+	.travel-widget--home {
+		padding: 34px 0 54px;
+	}
+
+	.travel-widget__hero-copy h1 {
+		font-size: clamp(2rem, 8vw, 3rem);
+	}
+
+	.hero,
+	.section {
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+}
+
+@media (max-width: 640px) {
+	.shell {
+		width: min(100% - 20px, 1180px);
+	}
+
+	.site-header__inner {
+		padding: 12px 0;
+	}
+
+	.brand strong {
+		font-size: 0.98rem;
+	}
+
+	.brand small {
+		font-size: 0.76rem;
+	}
+
+	.site-nav {
+		font-size: 0.9rem;
+	}
+
+	.hero h1,
+	.section__intro h2,
+	.prose h1,
+	.hero__title,
+	.promo-calendar__copy h2 {
+		letter-spacing: -0.03em;
 	}
 }

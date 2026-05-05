@@ -1,0 +1,15 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#10233D"/>
+  <path d="M0 455C104 401 249 388 395 429C523 465 642 535 778 544C932 555 1066 492 1200 421V720H0V455Z" fill="#1271C2"/>
+  <path d="M0 545C104 505 228 493 352 525C503 565 646 648 838 646C960 645 1075 614 1200 573V720H0V545Z" fill="#FF7A45" fill-opacity="0.46"/>
+  <circle cx="991" cy="151" r="56" fill="#FF7A45"/>
+  <circle cx="930" cy="117" r="96" fill="#FF7A45" fill-opacity="0.14"/>
+  <ellipse cx="299" cy="447" rx="116" ry="116" fill="#F6F8FB"/>
+  <rect x="170" y="430" width="258" height="38" fill="#0B2447"/>
+  <rect x="188" y="381" width="224" height="28" rx="14" fill="#0B2447"/>
+  <rect x="235" y="343" width="126" height="24" rx="12" fill="#0B2447"/>
+  <path d="M733 420C764 351 828 311 903 311C978 311 1041 351 1072 420" stroke="#F6F8FB" stroke-width="26" stroke-linecap="round"/>
+  <rect x="820" y="420" width="166" height="111" rx="28" fill="#F6F8FB"/>
+  <text x="72" y="122" fill="#F6F8FB" font-family="Arial, sans-serif" font-size="62" font-weight="700">Roma verso Barcellona</text>
+  <text x="72" y="186" fill="#CAEFFf" font-family="Arial, sans-serif" font-size="30">Rotte dirette, partenze smart e tariffe ideali per fughe al sole</text>
+</svg>

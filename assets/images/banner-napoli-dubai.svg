@@ -1,0 +1,14 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#0B2447"/>
+  <path d="M0 503C158 447 275 419 423 438C573 457 699 540 836 562C961 582 1084 558 1200 506V720H0V503Z" fill="#1271C2"/>
+  <path d="M0 595C109 542 213 527 319 546C476 574 620 664 811 672C958 678 1074 642 1200 592V720H0V595Z" fill="#CAEFFf" fill-opacity="0.28"/>
+  <circle cx="980" cy="146" r="70" fill="#FF7A45"/>
+  <circle cx="923" cy="119" r="110" fill="#FF7A45" fill-opacity="0.12"/>
+  <path d="M275 542L319 354H361L405 542H275Z" fill="#F6F8FB"/>
+  <path d="M448 542L491 300H533L577 542H448Z" fill="#F6F8FB"/>
+  <path d="M612 542L653 256H695L737 542H612Z" fill="#F6F8FB"/>
+  <path d="M782 542L824 198H866L908 542H782Z" fill="#F6F8FB"/>
+  <rect x="246" y="542" width="692" height="18" rx="9" fill="#F6F8FB"/>
+  <text x="72" y="122" fill="#F6F8FB" font-family="Arial, sans-serif" font-size="62" font-weight="700">Napoli verso Dubai</text>
+  <text x="72" y="186" fill="#CAEFFf" font-family="Arial, sans-serif" font-size="30">Lungo raggio, offerte premium e partenze da Sud Italia</text>
+</svg>
