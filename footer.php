@@ -11,6 +11,7 @@ $footer_left    = CPV_Data::get_airline_by_slug( 'ryanair' );
 $footer_right   = CPV_Data::get_airline_by_slug( 'wizz-air' );
 ?>
 </main>
+<?php cpv_render_promo_calendar(); ?>
 <footer class="site-footer">
 	<div class="shell site-footer__grid">
 		<div>

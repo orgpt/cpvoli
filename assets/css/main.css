@@ -110,8 +110,62 @@ a {
 	padding-bottom: 80px;
 }
 
+.travel-widget {
+	position: relative;
+	overflow: hidden;
+}
+
+.travel-widget--home {
+	padding: 56px 0 34px;
+	background:
+		linear-gradient(180deg, rgba(11, 36, 71, 0.8), rgba(11, 36, 71, 0.68)),
+		linear-gradient(135deg, rgba(18, 113, 194, 0.22), rgba(255, 122, 69, 0.18)),
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='540' viewBox='0 0 1600 540'%3E%3Crect width='1600' height='540' fill='%230b2447'/%3E%3Cpath d='M0 322C111 286 222 250 333 250s222 36 333 24 222-72 333-70 222 76 333 92 222-28 268-50v244H0z' fill='%231271c2' fill-opacity='.36'/%3E%3Cpath d='M0 372c95 37 190 74 285 74s190-37 285-30 190 59 285 59 190-52 285-67 190 7 285 22v110H0z' fill='%23caefff' fill-opacity='.2'/%3E%3C/svg%3E");
+	background-size: cover;
+	background-position: center;
+}
+
+.travel-widget--inner {
+	padding: 22px 0 18px;
+	background: linear-gradient(180deg, rgba(11, 36, 71, 0.98), rgba(16, 35, 61, 0.94));
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.travel-widget__hero-copy {
+	max-width: 940px;
+	margin-bottom: 24px;
+	color: #ffffff;
+}
+
+.travel-widget__hero-copy h1 {
+	margin: 0 0 16px;
+	font-size: clamp(2.5rem, 5vw, 5.25rem);
+	line-height: 0.95;
+	letter-spacing: -0.05em;
+}
+
+.travel-widget__hero-copy .eyebrow,
+.travel-widget__lede {
+	color: rgba(255, 255, 255, 0.82);
+}
+
+.travel-widget__frame {
+	padding: 18px;
+	border-radius: 28px;
+	background: rgba(11, 36, 71, 0.78);
+	backdrop-filter: blur(18px);
+	box-shadow: 0 24px 60px rgba(7, 21, 41, 0.28);
+}
+
+.travel-widget--inner .travel-widget__frame {
+	padding: 14px;
+	border-radius: 22px;
+	background: rgba(255, 255, 255, 0.04);
+	box-shadow: none;
+}
+
 .hero {
-	padding: 64px 0 32px;
+	padding: 42px 0 32px;
 }
 
 .hero--compact {
@@ -134,6 +188,13 @@ a {
 .prose h1 {
 	font-size: clamp(2.3rem, 4vw, 4.6rem);
 	line-height: 0.96;
+	margin: 0 0 18px;
+	letter-spacing: -0.04em;
+}
+
+.hero__title {
+	font-size: clamp(2rem, 3.4vw, 3.6rem);
+	line-height: 1.02;
 	margin: 0 0 18px;
 	letter-spacing: -0.04em;
 }
@@ -381,6 +442,37 @@ a {
 	margin-top: 22px;
 }
 
+.promo-calendar {
+	padding: 28px 0 8px;
+}
+
+.promo-calendar__copy {
+	max-width: 760px;
+	margin-bottom: 18px;
+}
+
+.promo-calendar__copy h2 {
+	margin: 0 0 10px;
+	font-size: clamp(1.8rem, 3vw, 3rem);
+	line-height: 1.02;
+	letter-spacing: -0.04em;
+}
+
+.promo-calendar__copy p:last-child {
+	margin: 0;
+	color: var(--cpv-muted);
+	font-size: 1rem;
+	line-height: 1.7;
+}
+
+.promo-calendar__frame {
+	padding: 18px;
+	border-radius: 26px;
+	background: rgba(255, 255, 255, 0.78);
+	border: 1px solid rgba(16, 35, 61, 0.08);
+	box-shadow: var(--cpv-shadow);
+}
+
 .prose {
 	max-width: 820px;
 }
@@ -430,4 +522,3 @@ a {
 		gap: 12px;
 	}
 }
-

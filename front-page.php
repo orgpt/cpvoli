@@ -17,17 +17,15 @@ $cities   = array_filter(
 		CPV_Data::get_city_by_slug( 'dubai' ),
 	)
 );
-$hero_origin  = CPV_Data::get_airport_by_code( 'FCO' );
-$hero_target  = CPV_Data::get_city_by_slug( 'londra' );
 $vs_left      = CPV_Data::get_airline_by_slug( 'ryanair' );
 $vs_right     = CPV_Data::get_airline_by_slug( 'wizz-air' );
 ?>
 <section class="hero">
-	<div class="shell hero__grid">
+	<div class="shell">
 		<div>
 			<p class="eyebrow">Programmatic SEO per voli dall'Italia</p>
-			<h1>Trova voli economici dagli aeroporti italiani con un’esperienza pensata per smartphone.</h1>
-			<p class="hero__lede">Architettura SEO a silos, prezzi comparabili in un click, filtri rapidi e pagine dinamiche pronte a scalare su migliaia di combinazioni aeroporto, citta e compagnia.</p>
+			<h2 class="hero__title">Architettura SEO scalabile per dominare le ricerche su voli da Milano, Roma e tutti gli aeroporti italiani.</h2>
+			<p class="hero__lede">Il widget Travelpayouts ora vive sotto l’header su tutte le pagine; qui la homepage accompagna la scoperta con silos SEO, percorsi editoriali e landing programmatiche pensate per crescere con i dati.</p>
 			<div class="hero__chips">
 				<span class="chip">Non-stop</span>
 				<span class="chip">Sotto €50</span>
@@ -35,35 +33,6 @@ $vs_right     = CPV_Data::get_airline_by_slug( 'wizz-air' );
 				<span class="chip">Alert prezzo</span>
 			</div>
 		</div>
-		<form class="search-panel js-search-panel" action="<?php echo esc_url( ( $hero_origin && $hero_target ) ? home_url( '/voli/' . $hero_origin['slug'] . '-a-' . $hero_target['slug'] . '/' ) : home_url( '/' ) ); ?>" method="get">
-			<div class="search-panel__row">
-				<label>
-					<span>Da</span>
-					<input type="text" name="origin" value="Roma Fiumicino" placeholder="Es. Milano Malpensa">
-				</label>
-				<label>
-					<span>A</span>
-					<input type="text" name="destination" value="Londra" placeholder="Es. Barcellona">
-				</label>
-			</div>
-			<div class="search-panel__row">
-				<label>
-					<span>Partenza</span>
-					<input type="text" name="departure" value="<?php echo esc_attr( wp_date( 'd/m/Y', strtotime( '+20 days' ) ) ); ?>">
-				</label>
-				<label>
-					<span>Ritorno</span>
-					<input type="text" name="return" value="<?php echo esc_attr( wp_date( 'd/m/Y', strtotime( '+26 days' ) ) ); ?>">
-				</label>
-			</div>
-			<div class="search-panel__actions">
-				<button class="button button--primary" type="submit">Confronta voli</button>
-				<button class="button button--ghost" type="button">Attiva alert</button>
-			</div>
-			<div class="search-panel__skeleton" aria-hidden="true">
-				<span></span><span></span><span></span>
-			</div>
-		</form>
 	</div>
 </section>
 
