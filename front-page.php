@@ -17,18 +17,18 @@ $cities   = array_filter(
 		CPV_Data::get_city_by_slug( 'dubai' ),
 	)
 );
-$vs_left      = CPV_Data::get_airline_by_slug( 'ryanair' );
-$vs_right     = CPV_Data::get_airline_by_slug( 'wizz-air' );
+$vs_left  = CPV_Data::get_airline_by_slug( 'ryanair' );
+$vs_right = CPV_Data::get_airline_by_slug( 'wizz-air' );
 ?>
 <section class="hero">
 	<div class="shell">
 		<div>
-			<p class="eyebrow">Programmatic SEO per voli dall'Italia</p>
-			<h2 class="hero__title">Architettura SEO scalabile per dominare le ricerche su voli da Milano, Roma e tutti gli aeroporti italiani.</h2>
-			<p class="hero__lede">Il widget Travelpayouts ora vive sotto l’header su tutte le pagine; qui la homepage accompagna la scoperta con silos SEO, percorsi editoriali e landing programmatiche pensate per crescere con i dati.</p>
+			<p class="eyebrow">ConfrontaPrezziVoli.it</p>
+			<h2 class="hero__title">Confronta prezzi voli e trova voli in offerta.</h2>
+			<p class="hero__lede">Confronta centinaia di offerte per prenotare i biglietti aerei al prezzo piu basso. Il comparatore di voli che stavi cercando per partire dall'Italia in modo semplice, veloce e conveniente.</p>
 			<div class="hero__chips">
 				<span class="chip">Non-stop</span>
-				<span class="chip">Sotto €50</span>
+				<span class="chip">Sotto EUR 50</span>
 				<span class="chip">Partenza mattina</span>
 				<span class="chip">Alert prezzo</span>
 			</div>
@@ -39,15 +39,16 @@ $vs_right     = CPV_Data::get_airline_by_slug( 'wizz-air' );
 <section class="section">
 	<div class="shell">
 		<div class="section__intro">
-			<p class="eyebrow">Sprint 1-2</p>
-			<h2>Hub aeroporti prioritari per intercettare il grosso della domanda italiana.</h2>
+			<p class="eyebrow">Confronta Voli</p>
+			<h2>Esplora le principali offerte di biglietti aerei per trovare la soluzione piu conveniente per il tuo viaggio.</h2>
+			<p class="hero__lede">Siamo un motore di ricerca per voli che analizza le principali compagnie aeree e i piu importanti fornitori di viaggi online. Ti permettiamo di confrontare facilmente tariffe aeree e costi di viaggio in un'unica piattaforma, per poi prenotare direttamente con il fornitore scelto.</p>
 		</div>
 		<div class="card-grid">
 			<?php foreach ( $airports as $airport ) : ?>
 				<a class="card card--link" href="<?php echo esc_url( home_url( '/voli-da/' . $airport['slug'] . '/' ) ); ?>">
 					<p class="card__code"><?php echo esc_html( $airport['code'] ); ?></p>
 					<h3><?php echo esc_html( $airport['display_name'] ); ?></h3>
-					<p>Rotte dirette, prezzi minimi stimati, terminal e alert dedicati.</p>
+					<p>Confronta offerte, controlla le rotte piu richieste e scopri le migliori opportunita di partenza da questo aeroporto.</p>
 				</a>
 			<?php endforeach; ?>
 		</div>
@@ -57,13 +58,14 @@ $vs_right     = CPV_Data::get_airline_by_slug( 'wizz-air' );
 <section class="section section--tinted">
 	<div class="shell">
 		<div class="section__intro">
-			<p class="eyebrow">Sprint 3</p>
-			<h2>Risultati mobile-first con prezzo flessibile, filtri a pillola e zero-latency feel.</h2>
+			<p class="eyebrow">Volo</p>
+			<h2>Prenota i tuoi biglietti aerei a prezzi convenienti, semplicemente e rapidamente.</h2>
+			<p class="hero__lede">Risparmia tempo e denaro scegliendo il volo piu veloce o l'offerta piu vantaggiosa, con una ricerca chiara e strumenti utili per trovare la tariffa giusta al momento giusto.</p>
 		</div>
 		<div class="results-shell">
 			<div class="pill-row">
 				<span class="pill is-active">Non-stop</span>
-				<span class="pill">Sotto €50</span>
+				<span class="pill">Sotto EUR 50</span>
 				<span class="pill">Weekend</span>
 				<span class="pill">Bagaglio incluso</span>
 			</div>
@@ -81,27 +83,83 @@ $vs_right     = CPV_Data::get_airline_by_slug( 'wizz-air' );
 
 <section class="section">
 	<div class="shell">
-		<div class="section__intro">
-			<p class="eyebrow">Sprint 2-4</p>
-			<h2>Silos pronti per città, rotte e compagnie.</h2>
-		</div>
 		<div class="triple-grid">
 			<div class="panel">
-				<h3>Voli per città</h3>
-				<?php foreach ( $cities as $city ) : ?>
-					<a class="inline-link" href="<?php echo esc_url( home_url( '/voli-per/' . $city['slug'] . '/' ) ); ?>">Voli per <?php echo esc_html( $city['display_name'] ); ?></a>
-				<?php endforeach; ?>
+				<h3>Confronta</h3>
+				<p>Siamo un motore di ricerca per voli che esamina compagnie aeree e fornitori di viaggio online. Una volta trovata l'opzione migliore, puoi prenotare direttamente con il fornitore in pochi passaggi.</p>
 			</div>
 			<div class="panel">
-				<h3>Compagnie più cercate</h3>
+				<h3>Low Cost</h3>
+				<p>Dopo aver trovato il miglior biglietto aereo con noi, verrai reindirizzato alla compagnia aerea o al fornitore di viaggi per completare la prenotazione e personalizzare le opzioni del volo.</p>
+			</div>
+			<div class="panel">
+				<h3>Compagnie piu cercate</h3>
 				<?php foreach ( $airlines as $airline ) : ?>
 					<a class="inline-link" href="<?php echo esc_url( home_url( '/compagnie-aeree/' . $airline['slug'] . '/' ) ); ?>"><?php echo esc_html( $airline['display_name'] ); ?></a>
 				<?php endforeach; ?>
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="shell">
+		<div class="section__intro">
+			<p class="eyebrow">Voli per citta</p>
+			<h2>Scopri alcune delle destinazioni piu cercate e confronta le migliori offerte in partenza dall'Italia.</h2>
+		</div>
+		<div class="triple-grid">
+			<?php foreach ( $cities as $city ) : ?>
+				<div class="panel">
+					<h3>Voli per <?php echo esc_html( $city['display_name'] ); ?></h3>
+					<p>Consulta le tratte piu richieste, confronta le compagnie disponibili e individua il periodo migliore per prenotare.</p>
+					<a class="button button--secondary" href="<?php echo esc_url( home_url( '/voli-per/' . $city['slug'] . '/' ) ); ?>">Scopri le offerte</a>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="shell">
+		<div class="section__intro">
+			<p class="eyebrow">La Nostra Storia</p>
+			<h2>ConfrontaPrezziVoli vanta un'esperienza pluriennale nel settore dei viaggi aerei.</h2>
+			<p class="hero__lede">Offriamo un servizio affidabile e conveniente per chi cerca voli nazionali e internazionali, con l'obiettivo di individuare le migliori offerte e tariffe disponibili sul mercato.</p>
+		</div>
+		<div class="story-grid">
 			<div class="panel">
-				<h3>Backlog conversione</h3>
-				<p>Newsletter, alert prezzo, caching, Lighthouse 90+, API live per timetable e tariffe.</p>
+				<h3>Scopri di piu</h3>
+				<p>Confrontiamo compagnie aeree, agenzie online e fornitori di viaggio per aiutarti a partire con maggiore controllo sul budget e con una panoramica chiara delle alternative disponibili.</p>
 				<a class="button button--secondary" href="<?php echo esc_url( ( $vs_left && $vs_right ) ? home_url( '/confronto/' . $vs_left['slug'] . '-vs-' . $vs_right['slug'] . '/' ) : home_url( '/' ) ); ?>">Vedi confronto compagnie</a>
+			</div>
+			<blockquote class="testimonial-card">
+				<p>"Confronta Voli mi ha aiutato a risparmiare tempo e denaro nelle mie vacanze. Servizio impeccabile!"</p>
+				<cite>Alex, Confronto Prezzi Volo</cite>
+			</blockquote>
+		</div>
+	</div>
+</section>
+
+<section class="section section--tinted">
+	<div class="shell">
+		<div class="section__intro">
+			<p class="eyebrow">Il Nostro Valore Unico</p>
+			<h2>Un comparatore di voli pratico e facile per prenotare i tuoi biglietti aerei e risparmiare.</h2>
+			<p class="hero__lede">Puoi confrontare centinaia di offerte di compagnie aeree online per trovare la soluzione migliore per la tua destinazione preferita. I filtri disponibili ti aiutano a personalizzare la ricerca in pochi clic.</p>
+		</div>
+		<div class="triple-grid">
+			<div class="panel">
+				<h3>Confronto Veloce</h3>
+				<p>Trova rapidamente le migliori offerte e le tariffe piu convenienti. I risultati possono essere valutati in base al prezzo, alla durata del tragitto e alla comodita del volo.</p>
+			</div>
+			<div class="panel">
+				<h3>Voli Economici</h3>
+				<p>Per una ricerca ancora piu personalizzata, puoi usare filtri come senza scali, aeroporto di partenza preferito o compagnie da escludere, cosi da individuare il volo giusto in pochi minuti.</p>
+			</div>
+			<div class="panel">
+				<h3>Prenotazione Flessibile</h3>
+				<p>Dopo aver trovato l'offerta ideale, puoi completare la prenotazione aggiungendo servizi extra come bagaglio registrato, scelta del posto o assicurazione di viaggio.</p>
 			</div>
 		</div>
 	</div>
