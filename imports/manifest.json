@@ -1,0 +1,213 @@
+{
+    "generated_at": "2026-05-05T15:50:56+02:00",
+    "counts": {
+        "categories": 13,
+        "airports": 41,
+        "cities": 3513,
+        "airlines": 1156
+    },
+    "batches": {
+        "airports": [
+            {
+                "file": "airports\\airports-batch-001.csv",
+                "count": 41
+            }
+        ],
+        "cities": [
+            {
+                "file": "cities\\cities-batch-001.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-002.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-003.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-004.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-005.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-006.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-007.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-008.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-009.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-010.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-011.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-012.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-013.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-014.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-015.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-016.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-017.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-018.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-019.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-020.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-021.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-022.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-023.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-024.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-025.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-026.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-027.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-028.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-029.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-030.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-031.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-032.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-033.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-034.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-035.csv",
+                "count": 100
+            },
+            {
+                "file": "cities\\cities-batch-036.csv",
+                "count": 13
+            }
+        ],
+        "airlines": [
+            {
+                "file": "airlines\\airlines-batch-001.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-002.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-003.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-004.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-005.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-006.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-007.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-008.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-009.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-010.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-011.csv",
+                "count": 100
+            },
+            {
+                "file": "airlines\\airlines-batch-012.csv",
+                "count": 56
+            }
+        ]
+    }
+}
