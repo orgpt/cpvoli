@@ -34,5 +34,5 @@ $header_airline = CPV_Data::get_airline_by_slug( 'ryanair' );
 		</nav>
 	</div>
 </header>
-<?php cpv_render_travelpayouts_widget(); ?>
+<?php cpv_render_search_widget(); ?>
 <main class="site-main">

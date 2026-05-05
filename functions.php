@@ -45,7 +45,7 @@ function cpv_enqueue_assets(): void {
 }
 add_action( 'wp_enqueue_scripts', 'cpv_enqueue_assets' );
 
-function cpv_get_travelpayouts_widget_src(): string {
+function cpv_get_search_widget_src(): string {
 	$params = array(
 		'currency'         => 'eur',
 		'campaign_id'      => '100',
@@ -71,8 +71,8 @@ function cpv_get_travelpayouts_widget_src(): string {
 	return 'https://tpembd.com/content?' . http_build_query( $params );
 }
 
-function cpv_render_travelpayouts_widget(): void {
-	$widget_src   = cpv_get_travelpayouts_widget_src();
+function cpv_render_search_widget(): void {
+	$widget_src   = cpv_get_search_widget_src();
 	$is_homepage  = is_front_page();
 	$widget_class = $is_homepage ? 'travel-widget travel-widget--home' : 'travel-widget travel-widget--inner';
 	?>
@@ -80,7 +80,7 @@ function cpv_render_travelpayouts_widget(): void {
 		<div class="shell">
 			<?php if ( $is_homepage ) : ?>
 				<div class="travel-widget__hero-copy">
-					<p class="eyebrow">Travelpayouts Flight Search</p>
+					<p class="eyebrow">Ricerca voli</p>
 					<h1>Le migliori offerte voli dagli aeroporti italiani, verso qualsiasi destinazione.</h1>
 					<p class="travel-widget__lede">Motore flight-only pensato per il mercato italiano, con confronto prezzi, rotte low cost e un’esperienza mobile-first ispirata ai grandi comparatori.</p>
 				</div>
@@ -211,7 +211,7 @@ function cpv_render_promo_calendar(): void {
 	<section class="promo-calendar">
 		<div class="shell">
 			<div class="promo-calendar__copy">
-				<p class="eyebrow">Pre Footer Travelpayouts</p>
+				<p class="eyebrow">Calendario offerte</p>
 				<h2><?php echo esc_html( $context['headline'] ); ?></h2>
 				<p><?php echo esc_html( $context['description'] ); ?></p>
 			</div>

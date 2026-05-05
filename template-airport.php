@@ -54,7 +54,7 @@ get_header();
 		<div class="table-card">
 			<div class="table-card__header">
 				<h2>Destinazioni con miglior rapporto prezzo</h2>
-				<p>Mock data pronta da sostituire con Travelpayouts o Amadeus nel prossimo sprint.</p>
+				<p>Dati dimostrativi pronti da sostituire con una sorgente prezzi live o Amadeus.</p>
 			</div>
 			<table class="data-table">
 				<thead>
@@ -83,4 +83,3 @@ get_header();
 </section>
 <?php
 get_footer();
-

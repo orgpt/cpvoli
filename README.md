@@ -26,7 +26,7 @@ Il tema legge direttamente:
 
 ## Prossimi step consigliati
 
-1. Collegare il layer prezzi e timetable a Travelpayouts o Amadeus.
+1. Collegare il layer prezzi e timetable a un provider API voli o Amadeus.
 2. Salvare alert e watchlists in custom tables o via plugin dedicato.
 3. Aggiungere generation pipelines per creare internal linking massivo fra hub, rotte e guide.
 4. Flush delle rewrite rules dopo l'attivazione del tema andando su `Impostazioni > Permalink` e salvando una volta.
